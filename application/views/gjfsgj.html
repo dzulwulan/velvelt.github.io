@@ -1,0 +1,45 @@
+<div class="row">
+		<?php
+        foreach ($detail as $key){
+          ?>
+			<div class=" col-md-6">
+				<img src="<?php echo $this->config->base_url().$key['gambar_katalog']; ?>" class="cloth" style="height:300px; width:auto ;object-fit:contain">
+			</div>
+			<div class="col-md-6">
+				<table class="table table-condensed table-dark">
+					<tr>
+						<td>Nama Barang </td>
+						<td class="arif">:</td>
+						<td>
+							<?php  echo $key['nama_katalog']; ?>
+						</td>
+					</tr>
+					<tr>
+						<td>Harga </td>
+						<td class="arif">:</td>
+						<td>
+							<?php  echo $key['harga_katalog']; ?>
+						</td>
+					</tr>
+					<tr>
+						<td>Bahan Pembuatan </td>
+						<td class="arif">:</td>
+						<td>Jeans</td>
+					</tr>
+					<tr>
+						<td>Jumlah </td>
+						<td class="arif">:</td>
+						<td>
+							<?php echo $key['jumlahbarang']; ?>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<?php $username = $_SESSION['username']; ?>
+							<!-- <form method="post" action ="" <button class="btn btn-danger" type="submit" name="submit" id="" value="Delete"> </button> </form>  -->
+							<a href="<?php echo $this->config->base_url();?>Ccart/deletetransaksi/<?php echo $key['id_katalog'];?>/<?php echo $username; ?>">Delete</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+	</div>

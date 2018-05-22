@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./promo.css">
+
+	<!-- SLIDE -->
+	<script> 
+		$(document).ready(function(){
+			$('#panel1, #panel2, #panel3').slideUp('slow');
+			$("#1").click(function(){
+				$("#panel1").slideToggle("slow");
+			});
+			$("#2").click(function(){
+				$("#panel2").slideToggle("slow");
+			});
+			$("#3").click(function(){
+				$("#panel3").slideToggle("slow");
+			});
+
+		});
+	</script>
+
+	<style> 
+	#panel, .flip {
+		padding: 5px;
+		text-align: center;
+		background-color: #e5eecc;
+		border: solid 1px #c3c3c3;
+	}
+
+	#panel {
+		padding: 50px;
+		display: none;
+	}
+	</style>
+
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand fixed-top navbar-dark bg-dark">
+		<!-- Navbar content -->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Velvet.Com</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Katalog</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Promo</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="container-fluid" style="margin-top: 56px;">
+		<!-- START -->
+		<!-- Caraousel -->
+		<div class="row">
+			<div class="col text-center">
+				<div id="demo" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+						<li data-target="#demo" data-slide-to="3"></li>
+						<li data-target="#demo" data-slide-to="4"></li>
+					</ul>
+					<!-- The slideshow -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="a.jpg" style="object-fit: cover;" width="100%" height="500">
+						</div>
+						<div class="carousel-item">
+							<img src="b.jpg" style="object-fit: cover;" width="100%" height="500">
+						</div>
+						<div class="carousel-item">
+							<img src="c.jpg" style="object-fit: cover;" width="100%" height="500">
+						</div>
+						<div class="carousel-item">
+							<img src="d.jpg" style="object-fit: cover;" width="100%" height="500">
+						</div>
+						<div class="carousel-item">
+							<img src="e.jpg" style="object-fit: cover;" width="100%" height="500">
+						</div>
+					</div>
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev" href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>	
+			</div>
+		</div>
+		
+		<!-- Konten Promo -->
+		<div class="row">
+			<div class="card-deck">
+				<div class="card">
+					<img class="card-img-top card-back" src="./1.jpg" alt="Card image cap">
+					<div class="flip" id="1">Detail</div>
+					<div class="card-body" id="panel1">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Harga<span>Coret</span></p>
+						<button class="btn btn-primary" id="1">Buy</button>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top card-back" src="./2.jpg" alt="Card image cap">
+					<div class="flip" id="2">Detail</div>
+					<div class="card-body" id="panel2">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Harga<span>Coret</span></p>
+						<button class="btn btn-primary">Buy</button>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top card-back" src="./3.jpg" alt="Card image cap">
+					<div class="flip" id="3">Detail</div>
+					<div class="card-body" id="panel3">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Harga<span>Coret</span></p>
+						<button class="btn btn-primary">Buy</button>
+					</div>
+				</div>
+			</div>
+		</div>		
+
+		<!-- Konten Footer-->
+		<footer class="ukuran-foot">
+			<div class="row footer">
+				<div class="col-4">
+					<div class="footer-left">
+						<h3>Otong<span>.com</span></h3>
+						<p class="footer-company-name">Otong &copy; 2018</p>
+					</div>	
+				</div>
+				
+				<div class="col-4">
+					<div class="footer-center">
+						<div>
+							<i class="fa fa-map-marker"></i>
+							<p><span>Jalan Telekomunikasi No 1</span> Bandung, Indonesia</p>
+						</div>
+						<div>
+							<i class="fa fa-phone"></i>
+							<p>+62822847595</p>
+						</div>
+						<div>
+							<i class="fa fa-envelope"></i>
+							<p><a href="mailto:support@company.com">support@otong.com</a></p>
+						</div>
+					</div>	
+				</div>
+				
+				<div class="col-4">
+					<div class="footer-right">
+						<p class="footer-company-about">
+							<span>About Otong</span>
+							Tempat berbelanja modern dengan gaya kekinian bla.............
+						</p>
+						<div class="footer-icons">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-whatsapp"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</footer>
+		<!-- END -->
+	</div>
+
+</body>
+</html>

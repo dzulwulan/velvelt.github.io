@@ -1,0 +1,46 @@
+.contain {
+  position: relative;
+  height: 50%;
+  width: 50%;
+
+}
+
+.catalog {
+  height: 50%;
+  width: 50%;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+
+}
+
+.product {
+  font-size: 13px;
+  color: darkgrey;
+
+}
+
+.price {
+  font-size: 15px;
+  color: navy;
+  float: right;
+  margin-right: 30px;
+}
+
+.catalog-categori {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.categori {
+  margin-bottom: 20px;
+}
+
+.choose {
+  background-color: #f1f1f1;
+}

@@ -1,0 +1,20 @@
+.jdl {
+    color: gray;
+    text-align: center;
+    font-weight: bold;
+  }
+  .coment {
+    font-size: 15px;
+    font-weight: inherit;
+
+  }
+  .baris {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom-color: ghostwhite;
+    border: 2px;
+  }
+  .cloth {
+    height: 50%;
+    width: 55%;
+  }
